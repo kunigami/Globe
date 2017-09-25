@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>d3.js Globe</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="http://mbostock.github.com/d3/talk/20111018/style.css"/>
+    <link type="text/css" rel="stylesheet" href="http://mbostock.github.com/d3/talk/20111018/colorbrewer/colorbrewer.css"/>
+    <style type="text/css">
+
+svg {
+  width:  1500px;
+  height: 800px;
+  pointer-events: all;
+}
+
+circle {
+  fill: #dbe4f0;
+}
+
+path {
+  fill: #aaa;
+  stroke: #fff;
+}
+
+#header {
+  top: 7px;
+  left: 685px;
+  text-align: right;
+  width: auto;
+}
+
+#header div {
+  font-size: 12px;
+}
+
+.tip { color: #999; }
+    </style>
+  </head>
+  <body>
+    <div id="body">
+      <div id="header">
+        d3.geoOrthographic
+        <div class="tip">drag to rotate</div>
+        <div><label for="animate">animate:</label>
+          <input id="animate" type="checkbox" unchecked>
+        </div>
+      </div>
+    </div>
+    <script src="vis.js"></script>
+  </body>
+</html>
